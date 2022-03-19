@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans:wght@300;400&display=swap);
+:root {
+  --secondary-font-family: Comfortaa, cursive;
+  --bs-body-font-family: "Open Sans", sans-serif;
+
+  --color-cyan: #f3f9ff;
+  --color-cyan-dark: #E3F5EF;
+
+  --bs-primary-rgb: 26, 101, 203;
+  --bs-primary: #1a65cb;
+  --bs-primary-hover: #1a65cb;
+
+  --bs-secondary-rgb: 255, 74, 100;
+  --bs-secondary: #ff4a64;
+  --bs-secondary-hover: #f2425b;
+
+  --bs-body-color: #717171;
+  --body-color-2: #a1a1a1;
+
+  --main-heading-font: 100px;
+  --title-1-font: 84px;
+  --subtitle-1-font: 50px;
+  --subtitle-2-font: 36px;
+  --bs-body-font: 22px;
+  --bs-body-line-height: 1.273;
+  --lead-font: 32px;
+  --footer-menu-font: 28px;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.title,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secondary-font-family);
+  color: var(--bs-primary);
+  font-weight: 700;
+}
+
+.main-heading, .display-1 {
+  font-size: var(--main-heading-font);
+  line-height: 1.15;
+}
+
+.title, .title-1 {
+  font-size: var(--title-1-font);
+  line-height: 1.191;
+}
+
+.subtitle, .subtitle-1 {
+  font-size: var(--subtitle-1-font);
+  line-height: 1.2;
+}
+
+.subtitle-2 {
+  font-size: var(--subtitle-2-font);
+  line-height: 1;
+}
+
+.lead {
+  color: #a1a1a1;
+  font-size: var(--lead-font);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.btn {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 0.844rem 1.75rem;
+}
+
+.btn.rounded-pill {
+  padding: 0.844rem 2.5rem;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-secondary {
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+  box-shadow: 0px 4px 20px rgba(var(--bs-secondary-rgb), 0.38);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bs-secondary-hover);
+  border-color: var(--bs-secondary-hover);
+  box-shadow: 0px 4px 20px rgba(var(--bs-secondary-rgb), 0.5);
+}
+
+.bg-cyan {
+  background-color: var(--color-cyan);
+}
+.bg-cyan-dark{
+  background-color: #E3F5EF;
+}
+
+@media (min-width: 1600px) {
+  .container,
+  .container-5lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1580px;
+  }
+}
+
+/* navbar */
+.main-navbar{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.logo-image{
+  max-width: 196px;
+}
+
+/* banner */
+
+.main-banner {
+  background-color: #F3FCF9;
+}
+
+.main-heading lottie-player {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+  height: 300px;
+}
+
+.main-banner .main-heading {
+  padding-top: 20%;
+}
+
+.line-bar{
+  background-color: var(--bs-secondary);
+  width: 1px;
+  height: 60px;
+  margin: -70px auto 40px;
+}
+
+/* footer */
+.footer-logo {
+  max-width: 242px;
+}
+
+.footer-menu a{
+  text-decoration: none;
+  font-size: var(--footer-menu-font);
+  line-height: 2.5;
+  color: inherit;
+}
+
+.footer-bottom {
+  background-color: #c8d9e9;
+  color: #10386e;
+  padding: 1.7% 0;
+}
+
+
+.footer-bottom a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-menu .social-menu {
+  margin-inline: -10px;
+}
+
+.footer-menu .social-icon {
+  display: inline-block;
+  line-height: 1;
+  padding-inline: 10px;
+}
