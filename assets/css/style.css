@@ -3,8 +3,9 @@
   --secondary-font-family: Comfortaa, cursive;
   --bs-body-font-family: "Open Sans", sans-serif;
 
-  --color-cyan: #f3f9ff;
-  --color-cyan-dark: #E3F5EF;
+  --bs-cyan: #3ac6a4;
+  --color-cyan-100: #f3f9ff;
+  --color-cyan-200: #e3f5ef;
 
   --bs-primary-rgb: 26, 101, 203;
   --bs-primary: #1a65cb;
@@ -44,17 +45,20 @@ h6 {
   font-weight: 700;
 }
 
-.main-heading, .display-1 {
+.main-heading,
+.display-1 {
   font-size: var(--main-heading-font);
   line-height: 1.15;
 }
 
-.title, .title-1 {
+.title,
+.title-1 {
   font-size: var(--title-1-font);
   line-height: 1.191;
 }
 
-.subtitle, .subtitle-1 {
+.subtitle,
+.subtitle-1 {
   font-size: var(--subtitle-1-font);
   line-height: 1.2;
 }
@@ -99,10 +103,28 @@ h6 {
 }
 
 .bg-cyan {
-  background-color: var(--color-cyan);
+  background-color: var(--color-cyan-100);
 }
-.bg-cyan-dark{
-  background-color: #E3F5EF;
+.bg-cyan-dark {
+  background-color: #e3f5ef;
+}
+
+.snap-wrapper {
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+.snap-align-start {
+  scroll-snap-align: start;
+}
+
+.spacing-x {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.spacing-start {
+  padding-left: 10vw;
 }
 
 @media (min-width: 1600px) {
@@ -117,21 +139,27 @@ h6 {
 }
 
 /* navbar */
-.main-navbar{
+.main-navbar {
   position: absolute;
   right: 0;
   left: 0;
   top: 0;
 }
 
-.logo-image{
+.logo-image {
   max-width: 196px;
+}
+
+.main-navbar .nav-link {
+  color: var(--bs-cyan);
+  font-size: 30px;
+  margin-inline: 2em;
 }
 
 /* banner */
 
 .main-banner {
-  background-color: #F3FCF9;
+  background-color: #f3fcf9;
 }
 
 .main-heading lottie-player {
@@ -145,11 +173,29 @@ h6 {
   padding-top: 20%;
 }
 
-.line-bar{
+.line-bar {
   background-color: var(--bs-secondary);
   width: 1px;
   height: 60px;
   margin: -70px auto 40px;
+}
+
+.vision-mission-value .img-icon {
+  width: 138px;
+  height: 138px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 26%;
+}
+
+/* product */
+.product {
+  position: relative;
+}
+
+.product-details-row {
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 /* footer */
@@ -157,7 +203,7 @@ h6 {
   max-width: 242px;
 }
 
-.footer-menu a{
+.footer-menu a {
   text-decoration: none;
   font-size: var(--footer-menu-font);
   line-height: 2.5;
@@ -169,7 +215,6 @@ h6 {
   color: #10386e;
   padding: 1.7% 0;
 }
-
 
 .footer-bottom a {
   color: inherit;

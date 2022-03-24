@@ -242,8 +242,8 @@
       this.scrollCallback = this.scrollCallback.bind(this);
       this.scrolled = true;
       this.config = extend(options, this.defaults);
-      if (options.scrollContainer != null) {
-        this.config.scrollContainer = document.querySelector(options.scrollContainer);
+      if (options.scrollcontainer-fluid != null) {
+        this.config.scrollcontainer-fluid = document.querySelector(options.scrollContainer);
       }
       // Map of elements to animation names:
       this.animationNameCache = new WeakMap();
@@ -280,7 +280,7 @@
           }
         }
         if (!this.disabled()) {
-          addEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
+          addEvent(this.config.scrollcontainer-fluid || window, 'scroll', this.scrollHandler);
           addEvent(window, 'resize', this.scrollHandler);
           this.interval = setInterval(this.scrollCallback, 50);
         }
@@ -305,7 +305,7 @@
       key: 'stop',
       value: function stop() {
         this.stopped = true;
-        removeEvent(this.config.scrollContainer || window, 'scroll', this.scrollHandler);
+        removeEvent(this.config.scrollcontainer-fluid || window, 'scroll', this.scrollHandler);
         removeEvent(window, 'resize', this.scrollHandler);
         if (this.interval != null) {
           clearInterval(this.interval);
@@ -514,7 +514,7 @@
       key: 'isVisible',
       value: function isVisible(box) {
         var offset = box.getAttribute('data-wow-offset') || this.config.offset;
-        var viewTop = this.config.scrollContainer && this.config.scrollContainer.scrollTop || window.pageYOffset;
+        var viewTop = this.config.scrollcontainer-fluid && this.config.scrollContainer.scrollTop || window.pageYOffset;
         var viewBottom = viewTop + Math.min(this.element.clientHeight, getInnerHeight()) - offset;
         var top = this.offsetTop(box);
         var bottom = top + box.clientHeight;
