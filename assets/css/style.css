@@ -26,7 +26,7 @@
 
   --bs-body-font-size: 18px;
   --logo-width: 109px;
-  --main-heading-font: 81px;
+  --main-heading-font: calc(5vw + 4px);
   --title-1-font: 26px;
   --subtitle-1-font: 20px;
   --subtitle-2-font: 18px;
@@ -40,7 +40,7 @@
 @media (min-width: 992px) {
   :root {
     --logo-width: 196px;
-    --main-heading-font: 100px;
+    --main-heading-font: calc(5vw + 4px);
     --title-1-font: 84px;
     --subtitle-1-font: 50px;
     --subtitle-2-font: 36px;
@@ -67,6 +67,10 @@ h6 {
   font-family: var(--secondary-font-family);
   color: var(--bs-primary);
   font-weight: 700;
+}
+
+section {
+  position: relative;
 }
 
 .main-heading,
@@ -165,11 +169,11 @@ h6 {
   min-height: 100vh;
 }
 
-.snap-wrapper {
+/* .snap-wrapper {
   scroll-snap-type: y mandatory;
   overflow-y: auto;
   max-height: 100vh;
-}
+} */
 .snap-align-start {
   scroll-snap-align: start;
 }
@@ -199,7 +203,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
-  .btn{
+  .btn {
     font-size: 24px;
   }
   .snap-align-md-end {
@@ -264,6 +268,25 @@ h6 {
   }
 }
 
+/* bubbles */
+.bubble-wrapper {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.bubble {
+  position: absolute;
+  --bubble-size: 100px;
+  height: var(--bubble-size);
+  width: var(--bubble-size);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 /* navbar */
 .main-navbar {
   position: absolute;
@@ -314,8 +337,8 @@ h6 {
 .main-heading lottie-player {
   display: inline-block;
   vertical-align: middle;
-  width: 300px;
-  height: 300px;
+  width: 16vw;
+  height: 16vw;
 }
 
 .main-banner .main-heading {
@@ -326,7 +349,7 @@ h6 {
   background-color: var(--bs-secondary);
   width: 1px;
   height: 60px;
-  margin: -70px auto 40px;
+  margin: -3vw auto 40px;
 }
 
 .vision-mission-value .img-icon {
@@ -335,6 +358,48 @@ h6 {
   height: 56px;
   width: 56px;
   padding: 15px;
+}
+
+.bubble-banner-xl-1 {
+  --bubble-size: 231px;
+  top: 20.9%;
+  left: 6%;
+}
+
+.bubble-banner-xl-2 {
+  --bubble-size: 254px;
+  top: 31.5%;
+  left: 53%;
+}
+
+.bubble-banner-sm-1 {
+  --bubble-size: 80px;
+  top: 19%;
+  left: 80%;
+}
+
+.bubble-banner-sm-2 {
+  --bubble-size: 71px;
+  top: 51.5%;
+  left: 33%;
+}
+
+.bubble-banner-sm-3 {
+  --bubble-size: 49px;
+  top: 75%;
+  left: 68%;
+}
+
+.bubble-banner-lg-1 {
+  --bubble-size: 168px;
+  top: 67%;
+  left: 17%;
+}
+
+.bubble-banner-lg-2 {
+  --bubble-size: 172px;
+  top: 52.5%;
+  left: 75%;
 }
 
 @media (min-width: 992px) {
@@ -402,10 +467,28 @@ h6 {
   height: 84px;
 }
 
+/* product bubble */
+
+.bubble-p-card {
+  --bubble-size: 290px;
+}
+
+.bubble-p-lg-1 {
+  --bubble-size: 264px;
+  left: 80%;
+  top: -15%;
+}
+
+.bubble-p-sm-1 {
+  --bubble-size: 264px;
+  left: 80%;
+  top: -15%;
+}
+
 @media (min-width: 992px) {
   .lp-card {
-    width: 320px;
-    height: 260px;
+    width: 16.67vw;
+    height: 13.55vw;
   }
 
   .product-count-wrapper {
