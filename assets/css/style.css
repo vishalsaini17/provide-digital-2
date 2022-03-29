@@ -480,9 +480,27 @@ section {
 }
 
 .bubble-p-sm-1 {
-  --bubble-size: 264px;
-  left: 80%;
-  top: -15%;
+  --bubble-size: 156px;
+  left: 43%;
+  top: 75%;
+}
+
+.bubble-pme-1 {
+  --bubble-size: 156px;
+  top: 70%;
+  left: 30%;
+}
+
+.bubble-pme-2 {
+  --bubble-size: 198px;
+  top: 70%;
+  left: 82.5%;
+}
+
+.bubble-covid-1 {
+  --bubble-size: 156px;
+  top: 79%;
+  left: 55%;
 }
 
 @media (min-width: 992px) {
