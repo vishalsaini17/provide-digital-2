@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans:wght@300;400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap);
 :root {
   --secondary-font-family: Comfortaa, cursive;
   --bs-body-font-family: "Open Sans", sans-serif;
@@ -12,6 +12,7 @@
   --color-yellow-100: #fcfbf3;
 
   --color-pink-100: #fff8f3;
+  --color-pink-200: #f9efe9;
 
   --bs-primary-rgb: 26, 101, 203;
   --bs-primary: #1a65cb;
@@ -568,6 +569,40 @@ section {
     background-color: #f2e8e2;
     height: auto;
   }
+}
+
+/* testimonial section */
+.testimonial-section {
+  position: relative;
+  padding-block: 60px;
+}
+
+.testimonial-section::before {
+  content: '';
+  position: absolute;
+  background-color: var(--color-pink-200);
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 280px;
+}
+
+.testimonial-slide {
+  border-radius: 79px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 34px 65px 0;
+  box-shadow: 0px 3px 86px #00000029;
+}
+
+.testimonial-footer {
+  font-size: 22px;
+  line-height: 28px;
+  padding-bottom: 55px;
+  padding-top: 50px;
 }
 
 /* footer */
