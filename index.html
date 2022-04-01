@@ -70,10 +70,10 @@
         <div class="bubble bubble-banner-lg-1"></div>
         <div class="bubble bubble-banner-lg-2"></div>
       </div>
-      <div class="container-fluid spacing-x position-relative">
+      <div class="container-fluid spacing-x position-relative pt-5">
         <div class="row">
-          <div class="col-12">
-            <h1 class="main-heading text-center">We are <lottie-player class="heart-beat-line" src="./assets/json/heartbeat.json" background="transparent" speed="1" loop autoplay></lottie-player> Creative</h1>
+          <div class="col-12 pt-5">
+            <h1 class="main-heading mt-5 text-center">We are <lottie-player class="heart-beat-line" src="./assets/json/heartbeat.json" background="transparent" speed="1" loop autoplay></lottie-player> Creative</h1>
           </div>
 
           <div class="col-12 text-center mb-5">
@@ -325,19 +325,18 @@
         </div>
       </div>
 
-      <div class="container-fluid spacing-x spacing-y-2">
-        <div class="col-12 col-md-8 col-lg-7 col-xl-6 px-0">
-          <h2 class="title">Our Amazing Partners</h2>
-          <p class="lead pt-4 pb-5">Great discoveries and improvements invariably involve the cooperation of many minds.</p>
-        </div>
+      <div class="sec-amazing-partners bg-cyan spacing-y-2">
+        <div class="container-fluid spacing-x">
+          <h2 class="title-1">Our Amazing Partners</h2>
+          <p class="col-12 col-md-10 col-lg-8 lead  pt-4 pb-5">Great discoveries and improvements invariably involve the cooperation of many minds.</p>
 
-        <div class="partners-slider px-n3">
-          <div class="px-3"><img src="./assets/img/nhs-foundation-trust.png" alt="hs-foundation-trust" class="img-fluid mx-auto"></div>
-          <div class="px-3"><img src="./assets/img/eastern-ahsn.png" alt="eastern-ahsn" class="img-fluid mx-auto"></div>
-          <div class="px-3"><img src="./assets/img/m-seh-cp.png" alt="m-seh-cp" class="img-fluid mx-auto"></div>
-          <div class="px-3"><img src="./assets/img/provide.png" alt="provide" class="img-fluid mx-auto"></div>
+          <div class="partners-slider px-n3">
+            <div class="px-3"><img src="./assets/img/nhs-foundation-trust.png" alt="hs-foundation-trust" class="img-fluid mx-auto"></div>
+            <div class="px-3"><img src="./assets/img/eastern-ahsn.png" alt="eastern-ahsn" class="img-fluid mx-auto"></div>
+            <div class="px-3"><img src="./assets/img/m-seh-cp.png" alt="m-seh-cp" class="img-fluid mx-auto"></div>
+            <div class="px-3"><img src="./assets/img/provide.png" alt="provide" class="img-fluid mx-auto"></div>
+          </div>
         </div>
-
       </div>
     </section>
 
@@ -428,44 +427,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" type="text/javascript" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script>
-    $('.snap-wrapper').scroll(function () {
-      let isScroll = this.scrollTop > 100
-      if (isScroll && !$('.main-navbar').hasClass('mobile-nav')) {
-        $('.main-navbar').addClass('mobile-nav')
-        $('.main-navbar').removeClass('navbar-expand-lg')
-      }
-      if (!isScroll && $('.main-navbar').hasClass('mobile-nav')) {
-        $('.main-navbar').removeClass('mobile-nav')
-        $('.main-navbar').addClass('navbar-expand-lg')
-      }
-    })
-
-    $('.partners-slider').slick({
-      slidesToShow: 4,
-      centerPadding: '100px',
-      responsive: [
-        {
-          breakpoint: 1023,
-          settings: {
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
-    })
-  </script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

@@ -1,55 +1,36 @@
-$('.slick-carousel').slick({
-  infinite: true,
-  slidesToShow: 2, // Shows a three slides at a time
-  slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
-  arrows: false, // Adds arrows to sides of slider
-  dots: false, // Adds the dots on the bottom
+$('.snap-wrapper').scroll(function () {
+  let isScroll = this.scrollTop > 100
+  if (isScroll && !$('.main-navbar').hasClass('mobile-nav')) {
+    $('.main-navbar').addClass('mobile-nav')
+    $('.main-navbar').removeClass('navbar-expand-lg')
+  }
+  if (!isScroll && $('.main-navbar').hasClass('mobile-nav')) {
+    $('.main-navbar').removeClass('mobile-nav')
+    $('.main-navbar').addClass('navbar-expand-lg')
+  }
+})
+
+$('.partners-slider').slick({
+  slidesToShow: 4,
+  centerPadding: '100px',
   responsive: [
     {
-      breakpoint: 1025,
+      breakpoint: 1023,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: false
+        slidesToShow: 3
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 991,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        initialSlide: 1
+        slidesToShow: 2
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 767,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 1
       }
     }
   ]
-});
-
-
-$('#testimonial-slider').slick({
-  arrows: false
 })
-
-
-wow = new WOW(
-  {
-    boxClass: 'wow',      // default
-    animateClass: 'rotateInDownLeft', // default
-    offset: 0,          // default
-    mobile: true,       // default
-    live: true        // default
-  }
-)
-
-wow.init();
-
-new fullpage('#fullpage', {
-
-});

@@ -9,6 +9,8 @@
   --color-cyan-300: #e3f5ef;
   --color-cyan-500: #e0f6e4;
 
+  --colo-green-100: #eef9f0;
+
   --color-yellow-100: #fcfbf3;
 
   --color-pink-100: #fff8f3;
@@ -174,6 +176,10 @@ section {
 
 .bg-cyan-dark {
   background-color: var(--color-cyan-300);
+}
+
+.bg-green-100 {
+  background-color: var(--colo-green-100);
 }
 
 .bg-yellow-100 {
@@ -361,7 +367,7 @@ section {
 }
 
 .main-banner .main-heading {
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 .line-bar {
@@ -621,6 +627,21 @@ section {
   line-height: 28px;
   padding-bottom: 55px;
   padding-top: 50px;
+}
+
+/* get in touch */
+.sec-get-in-touch .white-wrapper {
+  background-color: var(--bs-white);
+  box-shadow: 0px 3px 18px #3d713f14;
+  border-radius: 27px;
+  padding: 60px;
+}
+
+/* blog details */
+.aside-bg-wrapper {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 27px #11361d12;
+  border-radius: 44px;
 }
 
 /* footer */
