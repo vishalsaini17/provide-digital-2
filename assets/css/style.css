@@ -227,6 +227,12 @@ section {
   padding-bottom: 10vmax;
 }
 
+
+.accordion-wrapper{
+  overflow: auto;
+  max-height: 300px;
+}
+
 @media (min-width: 768px) {
   .btn {
     font-size: 24px;
@@ -630,11 +636,17 @@ section {
 }
 
 /* get in touch */
-.sec-get-in-touch .white-wrapper {
+.get-in-touch-section .white-wrapper {
   background-color: var(--bs-white);
   box-shadow: 0px 3px 18px #3d713f14;
   border-radius: 27px;
   padding: 60px;
+}
+
+.bg-get-in-touch-wrapper {
+  background-image: url(../img/get-in-touch-small.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 
 /* blog details */
@@ -645,7 +657,7 @@ section {
 }
 
 /* provide my experience */
-.product-features-list :nth-child(even){
+.product-features-list :nth-child(even) {
   flex-direction: row-reverse;
 }
 
