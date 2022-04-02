@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap);
 :root {
   --secondary-font-family: Comfortaa, cursive;
   --bs-body-font-family: "Open Sans", sans-serif;
@@ -12,6 +12,7 @@
   --colo-green-100: #eef9f0;
 
   --color-yellow-100: #fcfbf3;
+  --color-yellow-300: #F9F7E7;
 
   --color-pink-100: #fff8f3;
   --color-pink-200: #f9efe9;
@@ -72,6 +73,10 @@ h6 {
   font-weight: 700;
 }
 
+p, .p {
+  font-size: var(--bs-body-font);
+}
+
 section {
   position: relative;
 }
@@ -99,12 +104,31 @@ section {
   line-height: 1;
 }
 
-.lead {
+.lead, .lead-1 {
   color: #a1a1a1;
   font-size: var(--lead-font);
   line-height: 1.5;
   font-weight: 400;
 }
+
+.lead-2 {
+  font-size: var(--bs-body-font);
+  line-height: calc(2em + 2px);
+  font-weight: 600;
+}
+
+/* .responsive-img {
+  position: relative;
+  padding-top: 100%;
+}
+
+.responsive-img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+} */
 
 .btn {
   font-size: 24px;
@@ -659,6 +683,26 @@ section {
 /* provide my experience */
 .product-features-list :nth-child(even) {
   flex-direction: row-reverse;
+}
+
+/* our process */
+.our-process .nav-link {
+  background-color: var(--color-yellow-300);
+  border-radius: 20px;
+  padding: 10.5% 10.5% 7.5%;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.our-process .nav-link.active {
+  background-color: var(--color-cyan-300);
+}
+
+.process-stage-list .media img {
+  --img-size: 165px;
+  width: var(--img-size);
+  height: var(--img-size);
+  border: 1px solid #707070;
 }
 
 /* footer */
