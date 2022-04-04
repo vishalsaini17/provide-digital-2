@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="398.909" height="795" viewBox="0 0 398.909 795">
+  <defs>
+    <filter id="Path_254" x="-0.001" y="0" width="398.909" height="795" filterUnits="userSpaceOnUse">
+      <feOffset dx="6" dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feFlood flood-color="#ababab" flood-opacity="0.412"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <path id="Path_256" data-name="Path 256" d="M380.876,730.3a40.97,40.97,0,0,1-40.507,41.434H89.213A40.97,40.97,0,0,1,48.706,730.3V85.436A40.97,40.97,0,0,1,89.213,44.079h30.148a8.735,8.735,0,0,1,8.581,8.813h0a18.166,18.166,0,0,0,18.012,18.243H285.1a18.166,18.166,0,0,0,17.934-18.321h0a8.735,8.735,0,0,1,8.426-8.735h28.911a40.97,40.97,0,0,1,40.507,41.434Z" transform="translate(-48.703 -44.079)" fill="rgba(0,0,0,0)" stroke="rgba(112,112,112,0.27)" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_118" data-name="Group 118" transform="translate(-409.242 -1253.001)">
+    <g id="Group_114" data-name="Group 114" transform="translate(-62.633)">
+      <g id="Object" transform="translate(455.642 1237.523)">
+        <path id="Path_253" data-name="Path 253" d="M381.954,70.9v666.04a35.327,35.327,0,0,1-35.327,35.327H81.169a35.4,35.4,0,0,1-35.327-35.327V72.14A27.829,27.829,0,0,1,73.671,44.079H355.053a26.9,26.9,0,0,1,26.9,26.824Z" transform="translate(-4.211 -5.197)" fill="#f1f3f8" stroke="rgba(112,112,112,0.27)" stroke-width="1"/>
+        <g transform="matrix(1, 0, 0, 1, 16.23, 15.48)" filter="url(#Path_254)">
+          <path id="Path_254-2" data-name="Path 254" d="M335.3,26.668H84.147A53.03,53.03,0,0,0,31.736,80.239V725.1a53.03,53.03,0,0,0,52.411,53.571H335.3A53.03,53.03,0,0,0,387.637,725.1V80.239A52.952,52.952,0,0,0,335.3,26.668ZM375.81,725.1A40.97,40.97,0,0,1,335.3,766.532H84.147A40.97,40.97,0,0,1,43.64,725.1V80.239A40.97,40.97,0,0,1,84.147,38.882h30.148a8.735,8.735,0,0,1,8.581,8.813h0a18.166,18.166,0,0,0,18.012,18.243H280.032a18.166,18.166,0,0,0,17.934-18.321h0a8.735,8.735,0,0,1,8.426-8.735H335.3A40.97,40.97,0,0,1,375.81,80.316Z" transform="translate(-16.23 -15.17)" fill="#fff" stroke="rgba(112,112,112,0.27)" stroke-width="1"/>
+        </g>
+        <path id="Path_255" data-name="Path 255" d="M316.1,62.73H203.542a3.942,3.942,0,0,1-3.865-4.02h0a3.865,3.865,0,0,1,3.865-3.942H316.1a3.942,3.942,0,0,1,3.942,3.942h0a3.943,3.943,0,0,1-3.942,4.02Z" transform="translate(-50.132 -8.388)" fill="#bfd5f2" stroke="rgba(112,112,112,0.27)" stroke-width="1" opacity="0.75"/>
+        <g id="Group_67" data-name="Group 67" transform="translate(43.638 38.882)" clip-path="url(#clip-path)">
+          <rect id="Rectangle_202" data-name="Rectangle 202" width="336.112" height="728.269" transform="translate(-1.93 -0.077)" fill="#1a65cb" stroke="rgba(112,112,112,0.27)" stroke-width="1"/>
+        </g>
+      </g>
+      <text id="_01" data-name="01" transform="translate(609.829 1682.5)" fill="#fff" font-size="120" font-family="SofiaPro-Light, Sofia Pro" font-weight="300"><tspan x="0" y="0">01</tspan></text>
+    </g>
+  </g>
+</svg>

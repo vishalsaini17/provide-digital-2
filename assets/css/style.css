@@ -2,32 +2,26 @@
 :root {
   --secondary-font-family: Comfortaa, cursive;
   --bs-body-font-family: "Open Sans", sans-serif;
-
   --bs-cyan: #3ac6a4;
   --color-cyan-100: #f3f9ff;
   --color-cyan-200: #f1f4f3;
   --color-cyan-300: #e3f5ef;
   --color-cyan-500: #e0f6e4;
-
   --colo-green-100: #eef9f0;
-
+  --color-yellow-00: #EEEBD3;
   --color-yellow-100: #fcfbf3;
+  --color-yellow-200: #F5F3E6;
   --color-yellow-300: #F9F7E7;
-
   --color-pink-100: #fff8f3;
   --color-pink-200: #f9efe9;
-
   --bs-primary-rgb: 26, 101, 203;
   --bs-primary: #1a65cb;
   --bs-primary-hover: #1a65cb;
-
   --bs-secondary-rgb: 255, 74, 100;
   --bs-secondary: #ff4a64;
   --bs-secondary-hover: #f2425b;
-
   --bs-body-color: #717171;
   --body-color-2: #a1a1a1;
-
   --bs-body-font-size: 18px;
   --logo-width: 109px;
   --main-heading-font: calc(5vw + 4px);
@@ -81,6 +75,10 @@ section {
   position: relative;
 }
 
+.bg-blue {
+  background-color: var(--bs-primary);
+}
+
 .main-heading,
 .display-1 {
   font-size: var(--main-heading-font);
@@ -101,7 +99,7 @@ section {
 
 .subtitle-2 {
   font-size: var(--subtitle-2-font);
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .lead, .lead-1 {
@@ -129,7 +127,6 @@ section {
   right: 0;
   bottom: 0;
 } */
-
 .btn {
   font-size: 24px;
   font-weight: 400;
@@ -226,6 +223,7 @@ section {
 .snap-align-start {
   scroll-snap-align: start;
 }
+
 .snap-align-end {
   scroll-snap-align: end;
 }
@@ -234,25 +232,28 @@ section {
   padding-left: 10vw;
   padding-right: 10vw;
 }
+
 .spacing-y-0 {
   padding-top: 0;
   padding-bottom: 0;
 }
+
 .spacing-y-1 {
   padding-top: 5vmax;
   padding-bottom: 5vmax;
 }
+
 .spacing-y-2 {
   padding-top: 7.5vmax;
   padding-bottom: 7.5vmax;
 }
+
 .spacing-y-3 {
   padding-top: 10vmax;
   padding-bottom: 10vmax;
 }
 
-
-.accordion-wrapper{
+.accordion-wrapper {
   overflow: auto;
   max-height: 300px;
 }
@@ -302,11 +303,9 @@ section {
   .navbar-expand-lg .nav-barnd-wrapper {
     display: none;
   }
-
   .main-navbar:not(.navbar-expand-lg) .navbar-brand.nav-link {
     display: none;
   }
-
   .spacing-start {
     padding-left: 10vw;
   }
@@ -351,6 +350,15 @@ section {
   z-index: 999;
 }
 
+.main-navbar .dropdown-menu {
+  background-color: var(--color-yellow-200);
+}
+
+.main-navbar .dropdown-menu .dropdown-item {
+  padding-inline: 2rem;
+  font-size: 26px;
+}
+
 .logo-image {
   max-width: var(--logo-width);
 }
@@ -384,7 +392,6 @@ section {
 }
 
 /* banner */
-
 .main-banner {
   background-color: #f3fcf9;
 }
@@ -497,12 +504,7 @@ section {
 .line-dot::after {
   border-radius: 20px;
   width: 1px;
-  background-image: repeating-linear-gradient(
-    transparent,
-    transparent 7px,
-    var(--bs-primary) 7px,
-    var(--bs-primary) 15px
-  );
+  background-image: repeating-linear-gradient(transparent, transparent 7px, var(--bs-primary) 7px, var(--bs-primary) 15px);
   transform: rotate(90deg);
   height: 100px;
 }
@@ -523,7 +525,6 @@ section {
 }
 
 /* product bubble */
-
 .bubble-p-card {
   --bubble-size: 290px;
 }
@@ -563,7 +564,6 @@ section {
     width: 16.67vw;
     height: 13.55vw;
   }
-
   .product-count-wrapper {
     width: 105px;
     position: relative;
@@ -593,12 +593,7 @@ section {
     z-index: 3;
   }
   .line-dot::after {
-    background-image: repeating-linear-gradient(
-      transparent,
-      transparent 15px,
-      var(--bs-primary) 15px,
-      var(--bs-primary) 30px
-    );
+    background-image: repeating-linear-gradient(transparent, transparent 15px, var(--bs-primary) 15px, var(--bs-primary) 30px);
     transform: rotate(0deg);
   }
   .line-dot.start::after {
@@ -608,7 +603,6 @@ section {
     background-color: #f6f3d6;
     height: auto;
   }
-
   .line-dot.center::after {
     bottom: 0;
     top: 0;
@@ -736,4 +730,47 @@ section {
   display: inline-block;
   line-height: 1;
   padding-inline: 10px;
+}
+
+.snap-wrapper .main-banner {
+  height: 100vh;
+}
+
+.snap-wrapper .main-banner .main-heading {
+  padding-top: 13rem;
+  color: var(--bs-cyan);
+}
+
+.snap-wrapper .app-section {
+  bakcground: var(--bs-yellow-00);
+}
+
+.snap-wrapper .app-section .counting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.snap-wrapper .app-section .counting .circle {
+  border-radius: 50%;
+  background: var(--color-yellow-00);
+  padding: 1.8rem 2.4rem;
+  vertical-align: middle;
+  color: var(--bs-primary);
+  font-weight: bold;
+  font-size: 1.6875rem;
+}
+
+.snap-wrapper .app-section .counting .circle.active {
+  color: #fff;
+  font-size: 3.875rem;
+  background: var(--bs-primary);
+  padding: 0.2rem 1.7rem;
+}
+
+.snap-wrapper .app-section .counting .dashed {
+  font-size: 2rem;
+  color: var(--bs-primary);
+  letter-spacing: 5px;
+  vertical-align: middle;
 }
