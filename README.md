@@ -11,7 +11,7 @@
 - [Contact](https://xd.adobe.com/view/7f58fb03-7080-4708-8cb7-721884650fa9-2a0b/)
 - [Blog](https://xd.adobe.com/view/37ed8001-9d25-48ce-8672-5ccff96a4c04-62be/)
 
-**Font Family:** `@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans:wght@300;400&display=swap);`
+**Font Family:** `@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap);`
 
 **Main-header, h1:** `
 font-size: 100px;
