@@ -761,25 +761,26 @@ section {
   padding-inline: 10px;
 }
 
-.snap-wrapper .main-banner {
+/* ------------------------------ EC-Card Page ------------------------------ */
+#ec-card.snap-wrapper .main-banner {
   height: 100vh;
 }
 
-.snap-wrapper .main-banner .main-heading {
+#ec-card.snap-wrapper .main-banner .main-heading {
   padding-top: 13rem;
   color: var(--bs-cyan);
 }
 
-.snap-wrapper .app-section {
+#ec-card.snap-wrapper .app-section {
   background: var(--bs-yellow-00);
 }
 
-.snap-wrapper .app-section .counting {
+#ec-card.snap-wrapper .app-section .counting {
   display: flex;
   align-items: center;
 }
 
-.snap-wrapper .app-section .counting .circle {
+#ec-card.snap-wrapper .app-section .counting .circle {
   border-radius: 50%;
   background: var(--color-yellow-00);
   padding: 1.8rem 2.4rem;
@@ -789,29 +790,29 @@ section {
   font-size: 1.6875rem;
 }
 
-.snap-wrapper .app-section .counting .circle.active {
+#ec-card.snap-wrapper .app-section .counting .circle.active {
   color: #fff;
   font-size: 3.875rem;
   background: var(--bs-primary);
   padding: 0.2rem 1.7rem;
 }
 
-.snap-wrapper .app-section .counting .dashed {
+#ec-card.snap-wrapper .app-section .counting .dashed {
   font-size: 2rem;
   color: var(--bs-primary);
   letter-spacing: 5px;
   vertical-align: middle;
 }
 
-.snap-wrapper .business-section {
+#ec-card.snap-wrapper .business-section {
   background: var(--color-cyan-250);
 }
 
-.snap-wrapper .business-section .cards .img-box img {
+#ec-card.snap-wrapper .business-section .cards .img-box img {
   width: 23rem;
 }
 
-.snap-wrapper .business-section .cards .slider span {
+#ec-card.snap-wrapper .business-section .cards .slider span {
   background: var(--color-cyan-50);
   margin-inline: 1px;
   width: 6rem;
@@ -819,56 +820,70 @@ section {
   display: inline-block;
 }
 
-.snap-wrapper .business-section .cards .slider span.active {
+#ec-card.snap-wrapper .business-section .cards .slider span.active {
   background: var(--bs-primary);
 }
 
-.snap-wrapper .contact-section {
-  background: #FFFEF5;
-}
-
-.snap-wrapper .contact-section .contact-form {
-  border-radius: 1.5rem;
-  padding: 4rem 3rem;
-  box-shadow: 0px 28px 79px #31080817;
-}
-
-.snap-wrapper .contact-section .contact-form input {
-  padding: 1rem 2rem;
-  font-size: 22px;
-  background: #F3F3EB;
-  border-radius: 20px;
-  margin-left: 1rem;
-  width: 90%;
-}
-
-.snap-wrapper .contact-section .contact-form label {
-  margin-left: 1rem;
-}
-
-.snap-wrapper .contact-section .contact-form button.btn {
-  margin-top: 2rem;
-}
-
-.snap-wrapper .why-section {
+#ec-card.snap-wrapper .why-section {
   background: var(--color-green-100);
 }
 
-.snap-wrapper .why-section .accordion {
+#ec-card.snap-wrapper .why-section .accordion {
   height: 20rem;
   overflow-y: auto;
 }
 
-.snap-wrapper .why-section .accordion .accordion-item {
+#ec-card.snap-wrapper .why-section .accordion .accordion-item {
   background: none;
   border-inline: none;
 }
 
-.snap-wrapper .why-section .accordion .accordion-item .accordion-button {
+#ec-card.snap-wrapper .why-section .accordion .accordion-item .accordion-button {
   background: none;
   color: #333;
   border: none;
   font-size: 22px;
   outline: none;
   box-shadow: none;
+}
+
+.contact-section {
+  background: #FFFEF5;
+}
+
+.contact-section .contact-form {
+  border-radius: 1.5rem;
+  padding: 4rem 3rem;
+  box-shadow: 0px 28px 79px #31080817;
+}
+
+.contact-section .contact-form input, .contact-section .contact-form select, .contact-section .contact-form textarea {
+  padding: 1rem 2rem;
+  font-size: 20px;
+  background: #F3F3EB;
+  border-radius: 20px;
+  margin-left: 1rem;
+  width: 90%;
+}
+
+.contact-section .contact-form label {
+  margin-left: 1rem;
+}
+
+.contact-section .contact-form button.btn {
+  margin-top: 2rem;
+}
+
+/* ----------------------------- Contact Us Page ---------------------------- */
+#contact-us {
+  background: var(--color-green-100);
+  background-image: url("./assets/img/Header image -Cotact Us-01.svg");
+}
+
+#contact-us .contact-section {
+  background-color: transparent;
+}
+
+#contact-us .contact-section .contact-form label {
+  font-size: 22px;
 }

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Provide Digital</title>
+
+  <link crossorigin="anonymous" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link crossorigin="anonymous" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+
+<body>
+
+  <nav class="main-navbar navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid spacing-x align-items-center">
+      <div class="col px-0 nav-barnd-wrapper">
+        <a class="navbar-brand" href="/" aria-label="Provide Digital Logo">
+          <img src="./assets/img/provide-digital-logo.png" alt="Provide Digital" class="img-fluid logo-image" />
+        </a>
+      </div>
+      <button class="navbar-toggler text-cyan" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="material-icons">segment</span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav py-lg-2">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="./about.html">About</a></li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="navbar-brand nav-link" href="/" aria-label="Provide Digital Logo">
+                <img src="./assets/img/provide-digital-logo.png" alt="Provide Digital" class="img-fluid logo-image" />
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle new-drop-custum" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item nav-link" href="/ec-card.html">eC- Card App</a></li>
+                <li><a class="dropdown-item nav-link" href="/provide-my-experience.html">Provide My Experience</a></li>
+                <li><a class="dropdown-item nav-link" href="/covid-products.html">Covid Products</a></li>
+                <li><a class="dropdown-item nav-link" href="/contact-us.html">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link " href="./blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contact-us" class="snap-wrapper min-h-100vh">
+    
+    <section class="contact-section spacing-y-md-3">
+      <div class="container-fluid spacing-x">
+        <div class="row">
+
+          <div class="col-4 mt-5">
+            <h1 class="title">Get in touch with us</h1>
+            <p class="lead mt-5 w-75 text-black">See how Provide Digital could work for you</p>
+          </div>
+
+          <form action="" class="col-7 mx-auto contact-form row bg-white">
+            <h1 class="lead text-blue fw-bold mb-5">Ask Provide Digital</h1>
+            <div class="col-md-6 mb-5">
+              <label for="first_name" class="form-label ">First Name*</label>
+              <input type="text" name="first_name" id="first_name" class="form-control">
+            </div>
+
+            <div class="col-md-6 mb-5">
+              <label for="last_name" class="form-label ">Last Name*</label>
+              <input type="text" name="last_name" id="last_name" class="form-control">
+            </div>
+
+            <div class="col-md-6 mb-5">
+              <label for="work_email" class="form-label ">Official Email*</label>
+              <input type="email" name="work_email" id="work_email" class="form-control">
+            </div>
+
+            <div class="col-md-6 mb-5">
+              <label for="help-content" class="form-label ">What would you like us to help you with?</label>
+              <select type="text" name="help-content" id="help-content" class="form-select">
+                <option value="ec-card">EC-Card</option>
+                <option value="experience">Provide My Experience</option>
+                <option value="bed-bureau">Bed Bureau</option>
+                <option value="booking">Provide My Booking</option>
+                <option value="report">Provide My Report</option>
+              </select>
+            </div>
+            
+            <div class="col-md-6 mb-5">
+              <label for="phone" class="form-label ">Phone Number*</label>
+              <input type="tel" name="phone" id="phone" class="form-control">
+              <div class="text-center">
+                <button class="btn btn-secondary rounded-pill">Submit <i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+            
+            <div class="col-md-6 mb-5">
+              <label for="message" class="form-label ">Send a message</label>
+              <textarea name="message" id="" cols="20" rows="5"></textarea>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer bg-cyan pt-5 snap-align-start text-center text-md-left">
+      <div class="container-fluid spacing-x pt-5">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <a href="/"><img src="./assets/img/provide-digital-logo-footer.png" class="img-fluid footer-logo" alt="Provide Digital" /></a>
+          </div>
+          <div class="col-12 col-md-3 col-lg-auto mx-auto">
+            <h3 class="subtitle-2">Company</h3>
+            <ul class="list-unstyled footer-menu">
+              <li><a href="/about-us">About us</a></li>
+              <li><a href="/who-we-are">Who we are</a></li>
+              <li><a href="/our-history">Our history</a></li>
+              <li><a href="/privacy-policies">Privacy Policies</a></li>
+              <li><a href="/term-and-condition">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3 col-lg-auto mx-auto">
+            <h3 class="subtitle-2">Products</h3>
+            <ul class="list-unstyled footer-menu">
+              <li><a href="/about-us">About us</a></li>
+              <li><a href="/who-we-are">Who we are</a></li>
+              <li><a href="/our-history">Our history</a></li>
+              <li><a href="/privacy-policies">Privacy Policies</a></li>
+              <li><a href="/term-and-condition">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3 col-lg-auto mx-auto">
+            <h3 class="subtitle-2">Learn</h3>
+            <ul class="list-unstyled footer-menu">
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/video">Videos</a></li>
+              <li><a href="/guides">Guides</a></li>
+            </ul>
+          </div>
+
+          <div class="py-5">
+            <hr class="w-100 my-5">
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3 ">
+            <h3 class="subtitle-2">Contact</h3>
+            <ul class="list-unstyled footer-menu mb-3">
+              <li><a href="mailto:hello@providedigital.com">hello@providedigital.com</a></li>
+              <li class="social-menu">
+                <a href="/facebook" class="social-icon"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="/twitter" class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="/linkedin" class="social-icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3  order-1 order-md-0 mt-5 mt-md-0 mx-auto">
+            <h3 class="subtitle-2">Colchester UK</h3>
+            <ul class="list-unstyled footer-menu">
+              <li><a href="#">900 The Crescent Colchester Business Park</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3 ">
+            <h3 class="subtitle-2 d-none d-md-block">Subscribe</h3>
+            <ul class="list-unstyled footer-menu">
+              <li>
+                <div class="input-group">
+                  <input type="text" class="form-control border-ft-color" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="btn btn-outline-secondary bg-transparent custum-footer-btn" type="button" id="button-addon2">
+                    <i class="bi bi-send-fill"></i>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom text-center text-md-start lead mt-5">
+        <div class="container-fluid spacing-x">
+          <div class="row">
+            <div class="col-12 col-md order-1 order-md-0"><a href="/security">Security</a> | <a href="/privacy">Privacy</a> | <a href="/terms">Terms</a></div>
+            <div class="col-12 col-md-auto copyright">© Provide Digital</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" type="text/javascript" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" type="text/javascript" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

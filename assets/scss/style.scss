@@ -783,8 +783,8 @@ section {
   padding-inline: 10px;
 } 
 
-// EC-Card page
-.snap-wrapper {
+/* ------------------------------ EC-Card Page ------------------------------ */
+#ec-card.snap-wrapper {
   .main-banner{
     height: 100vh;
 
@@ -847,33 +847,6 @@ section {
 
   }
 
-  .contact-section{
-    background: #FFFEF5;
-
-    .contact-form{
-      border-radius: 1.5rem;
-      padding: 4rem 3rem;
-      box-shadow: 0px 28px 79px #31080817;
-
-      input{
-        padding: 1rem 2rem;
-        font-size: 22px;
-        background: #F3F3EB;
-        border-radius: 20px;
-        margin-left: 1rem;
-        width: 90%;
-      }
-      label{
-        margin-left: 1rem;
-      }
-
-      button.btn{
-        margin-top: 2rem;
-      }
-    }
-
-  }
-
   .why-section{
     background: var(--color-green-100);
 
@@ -894,6 +867,46 @@ section {
           box-shadow: none;
         }
       }
+    }
+  }
+}
+
+.contact-section{
+  background: #FFFEF5;
+
+  .contact-form{
+    border-radius: 1.5rem;
+    padding: 4rem 3rem;
+    box-shadow: 0px 28px 79px #31080817;
+
+    input, select, textarea{
+      padding: 1rem 2rem;
+      font-size: 20px;
+      background: #F3F3EB;
+      border-radius: 20px;
+      margin-left: 1rem;
+      width: 90%;
+    }
+    label{
+      margin-left: 1rem;
+    }
+
+    button.btn{
+      margin-top: 2rem;
+    }
+  }
+}
+
+/* ----------------------------- Contact Us Page ---------------------------- */
+#contact-us{
+  background: var(--color-green-100);
+  background-image: url('./assets/img/Header image -Cotact Us-01.svg');
+
+  .contact-section{
+    background-color: transparent;
+
+    .contact-form{
+      label{font-size: 22px;}
     }
   }
 }
