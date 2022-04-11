@@ -58,62 +58,90 @@
     </div>
   </nav>
 
-  <main id="contact-us" class="snap-wrapper min-h-100vh">
+  <main id="contact-us" class="snap-wrapper contact-us-wrapper min-h-100vh">
     
-    <section class="contact-section spacing-y-md-3">
+    <section class="get-in-touch-section bg-green-200">
       <div class="container-fluid spacing-x">
-        <div class="row">
+        <div class="bg-get-in-touch-wrapper spacing-y-2">
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-3">
+              <h2 class="title-1">Get in touch with us</h2>
+              <p class="contact-txt">See how Provide Digital could work for you</p>
 
-          <div class="col-4 mt-5">
-            <h1 class="title">Get in touch with us</h1>
-            <p class="lead mt-5 w-75 text-black">See how Provide Digital could work for you</p>
-          </div>
-
-          <form action="" class="col-7 mx-auto contact-form row bg-white">
-            <h1 class="lead text-blue fw-bold mb-5">Ask Provide Digital</h1>
-            <div class="col-md-6 mb-5">
-              <label for="first_name" class="form-label ">First Name*</label>
-              <input type="text" name="first_name" id="first_name" class="form-control">
-            </div>
-
-            <div class="col-md-6 mb-5">
-              <label for="last_name" class="form-label ">Last Name*</label>
-              <input type="text" name="last_name" id="last_name" class="form-control">
-            </div>
-
-            <div class="col-md-6 mb-5">
-              <label for="work_email" class="form-label ">Official Email*</label>
-              <input type="email" name="work_email" id="work_email" class="form-control">
-            </div>
-
-            <div class="col-md-6 mb-5">
-              <label for="help-content" class="form-label ">What would you like us to help you with?</label>
-              <select type="text" name="help-content" id="help-content" class="form-select">
-                <option value="ec-card">EC-Card</option>
-                <option value="experience">Provide My Experience</option>
-                <option value="bed-bureau">Bed Bureau</option>
-                <option value="booking">Provide My Booking</option>
-                <option value="report">Provide My Report</option>
-              </select>
-            </div>
-            
-            <div class="col-md-6 mb-5">
-              <label for="phone" class="form-label ">Phone Number*</label>
-              <input type="tel" name="phone" id="phone" class="form-control">
-              <div class="text-center">
-                <button class="btn btn-secondary rounded-pill">Submit <i class="bi bi-arrow-right"></i></button>
+              <div class="subs-block">
+                <label class="second-font label">Subscribe</label>
+              <div class="input-group  subscribe-input">
+               
+                <input type="text" class="form-control border-ft-color" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn bg-transparent custum-footer-btn" type="button" id="button-addon2">
+                  <i class="bi bi-send-fill"></i>
+                </button>
               </div>
             </div>
-            
-            <div class="col-md-6 mb-5">
-              <label for="message" class="form-label ">Send a message</label>
-              <textarea name="message" id="" cols="20" rows="5"></textarea>
+
             </div>
 
-          </form>
+            <div class="col-12 col-md-7">
+              <div class="white-wrapper h-100">
+                <div class="row justify-content-between align-self-start form-own">
+                  <div class="col-12 pb-3">
+                    <h4>Ask Provide Digital</h4>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="first-name">First Name*</label>
+                      <input type="text" class="form-control mt-2" id="first-name">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="last-name">Last Name*</label>
+                      <input type="text" class="form-control error mt-2" id="last-name">
+                      <div class="error-wrapper text-center">Enter a valid phone number</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="official-email">Official Email*</label>
+                      <input type="text" class="form-control mt-2" id="official-email">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="help">What would you like us to help you with?</label>
+                      <div class="select-wrapper">
+                        <select name="likeToHelp" id="help" class="form-control mt-2">
+                          <option value="1" selected>eC-Card</option>
+                          <option value="2">eC-Card</option>
+                          <option value="3">eC-Card</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="phone-number">Phone Number*</label>
+                      <input type="text" class="form-control mt-2" id="phone-number">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="first-name">Send a message</label>
+                      <textarea class="form-control mt-2" rows="5"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <button class="btn btn-secondary rounded-pill">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
+
 
     <footer class="main-footer bg-cyan pt-5 snap-align-start text-center text-md-left">
       <div class="container-fluid spacing-x pt-5">

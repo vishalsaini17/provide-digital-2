@@ -10,9 +10,15 @@
   <link crossorigin="anonymous" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
   <link crossorigin="anonymous" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://kit.fontawesome.com/4187d7a49b.js" crossorigin="anonymous"></script>
+
 
 
 </head>
@@ -35,23 +41,25 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav py-lg-2">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="./about.html">About</a></li>
-            <li class="nav-item d-none d-lg-block">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">home</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="./about.html">about</a></li>
+            <li class="nav-item d-none d-lg-block animate__animated animate__slideInDown animate__delay-1s animate__slow">
               <a class="navbar-brand nav-link" href="/" aria-label="Provide Digital Logo">
                 <img src="./assets/img/provide-digital-logo.png" alt="Provide Digital" class="img-fluid logo-image" />
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle new-drop-custum" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="nav-link dropdown-toggle new-drop-custum" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">product</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu-list list-unstyled" >
                 <li><a class="dropdown-item nav-link" href="/ec-card.html">eC- Card App</a></li>
                 <li><a class="dropdown-item nav-link" href="/provide-my-experience.html">Provide My Experience</a></li>
                 <li><a class="dropdown-item nav-link" href="/covid-products.html">Covid Products</a></li>
-                <li><a class="dropdown-item nav-link" href="/contact-us.html">Contact Us</a></li>
+                <!-- <li><a class="dropdown-item nav-link" href="/contact-us.html">Contact Us</a></li> -->
               </ul>
+            </div>
             </li>
-            <li class="nav-item"><a class="nav-link " href="./blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link " href="./blog.html">blog</a></li>
           </ul>
         </div>
       </div>
@@ -72,7 +80,8 @@
       <div class="container-fluid spacing-x position-relative pt-5">
         <div class="row">
           <div class="col-12 pt-5">
-            <h1 class="main-heading mt-5 text-center">We are <lottie-player class="heart-beat-line" src="./assets/json/heartbeat.json" background="transparent" speed="1" loop autoplay></lottie-player> Creative</h1>
+            <h1 class="main-heading mt-5 text-center">
+              <span class="animate__animated animate__slideInLeft animate__delay-1s animate__slow d-inline-block">We are</span> <lottie-player class="heart-beat-line" src="./assets/json/heartbeat.json" background="transparent" speed="1" loop autoplay></lottie-player> <span class="animate__animated animate__slideInRight animate__delay-1s animate__slow d-inline-block">Creative</span></h1>
           </div>
 
           <div class="col-12 text-center mb-5">
@@ -81,7 +90,7 @@
           </div>
 
           <div class="col-12 text-center py-5 mt-4">
-            <h4>IN PARTNERSHIP WITH</h4>
+            <h4 class="partnership-with-txt">IN PARTNERSHIP WITH</h4>
             <div class="centered py-sm-3 py-lg-5 mt-5 mt-md-3">
               <img class="img-fluid" src="./assets/img/banner-group.png" alt="dastop-view" />
             </div>
@@ -95,6 +104,7 @@
         <div class="row">
           <div class="col-md-12">
             <h2 class="title d-md-none pb-4">Bespoke apps and technology for the healthcare market</h2>
+            <h2 class="second-font text-center pb-3">What we stand for?</h2>
           </div>
         </div>
         <div class="row ">
@@ -104,8 +114,8 @@
                 <img src="./assets/icons/eye.png" alt="Vision" class="img-icon mb-1">
               </div>
               <div class="col-12 col-md pt-3">
-                <h4 class="text-primary">Vision</h4>
-                <p class="text-md-primary">To be the Global leaders in creating Intelligent Healthcare Solutions.</p>
+                <h4 class="text-primary second-font">Vision</h4>
+                <p class="text-md-primary text-primary font-14 stand-for-txt">To be the Global leaders in creating Intelligent Healthcare Solutions.</p>
               </div>
             </div>
           </div>
@@ -115,8 +125,8 @@
                 <img src="./assets/icons/mission-accomplished.png" alt="Mission" class="img-icon mb-1">
               </div>
               <div class="col-12 col-md pt-3">
-                <h4 class="text-primary">Mission</h4>
-                <p class="text-md-primary">Design & create innovative digital solutions for better health experiences.</p>
+                <h4 class="text-primary second-font">Mission</h4>
+                <p class="text-md-primary text-primary font-14 stand-for-txt">Design & create innovative digital solutions for better health experiences.</p>
               </div>
             </div>
           </div>
@@ -126,8 +136,8 @@
                 <img src="./assets/icons/tag.png" alt="Tag" class="img-icon mb-1">
               </div>
               <div class="col-12 col-md pt-3">
-                <h4 class="text-primary">Values</h4>
-                <p class="text-md-primary">To be innovative yet operate with utmost care and integrity.</p>
+                <h4 class="text-primary second-font">Values</h4>
+                <p class="text-md-primary text-primary font-14 stand-for-txt">To be innovative yet operate with utmost care and integrity.</p>
               </div>
             </div>
           </div>
@@ -138,61 +148,65 @@
     <section class="section-title bg-yellow-100 snap-align-start snap-align-md-end spacing-y-2 spacing-y-md-1">
       <div class="container-fluid spacing-x pb-1">
         <h2 class="title-1">Our Distinctive Products</h2>
-        <p class="subtitle-2 col-12 col-lg-9 px-0">We provide bespoke apps and technology to healthcare industries that help ease the delivery of their services to the public.</p>
+        <p class="subtitle-2 col-12 col-lg-8 px-0">We provide bespoke apps and technology to healthcare industries that help ease the delivery of their services to the public.</p>
       </div>
     </section>
+    <ul class="list-unstyled product-list-wrapper">
+      <li>
     <section class="product product-1 spacing-y-2 spacing-y-md-0 snap-align-start bg-yellow-100 position-relative">
       <div class="bubble bubble-p-lg-1"></div>
       <div class="bubble bubble-p-sm-1"></div>
       <div class="container-fluid spacing-start position-relative">
         <div class="row min-h-100vh">
-          <div class="col-12 col-md-auto d-flex product-design-line">
+          <div class="col-12 col-md-auto d-flex product-design-line example-classname">
             <div class="product-count-wrapper">
               <div class="product-count text-primary">
-                <span class="title-1">1</span>
-                <span class="tiny-num">| 3</span>
+                <span class="title-1 big-txt second-font">1</span>
+                <span class="tiny-num second-font">| 3</span>
                 <div>PRODUCT</div>
               </div>
             </div>
             <div class="line-dot start"></div>
           </div>
-          <div class="col-12 col-md-3 me-auto align-self-center">
+          <div class="col-12 col-md-3 me-auto align-self-center example-classname2">
             <div class="p-card mb-4 mb-md-5 position-relative">
               <div class="bubble bubble-p-card"></div>
               <lottie-player class="lp-card position-relative" src="assets/json/card-animation.json" background="transparent" speed="1" loop autoplay></lottie-player>
             </div>
-            <h3 class="subtitle-1 text-primary">eC-Card</h3>
-            <p class="lead">The accessible, secure and confidential condom card app offering free sexual health resources to young people.</p>
+            <h3 class="subtitle-1 text-primary pb-2">eC-Card</h3>
+            <p class="lead lead-left-info-txt">The accessible, secure and confidential condom card app offering free sexual health resources to young people.</p>
           </div>
-          <div class="col-12 col-md-7 align-self-center">
+          <div class="col-12 col-md-7 align-self-center product-right-wrapper example-classname3">
             <div class="d-none d-md-flex flex-wrap flex-md-nowrap product-details-row">
-              <div class="col-12 col-md-5 product-details-item">
+              <div class="col-12 col-md-7 product-details-item">
                 <img src="./assets/img/card-1-slide.png" class="img-fluid" alt="">
                 <h4 class="subtitle-2">Collect Local Data</h4>
-                <p>Statistics on condom distribution can be collated by sexual health services to help control supply and compare with other data, such as teen pregnancies and STIs.</p>
+                <p class="txt-info">Statistics on condom distribution can be collated by sexual health services to help control supply and compare with other data, such as teen pregnancies and STIs.</p>
               </div>
-              <div class="col-12 col-md-5 product-details-item">
+              <div class="col-12 col-md-7 product-details-item">
                 <img src="./assets/img/card-1-slide.png" class="img-fluid" alt="">
                 <h4 class="subtitle-2">Highly Customisable App</h4>
-                <p>Healthcare providers can modify the app according to their requirements. Customisation can be done based on the location and the needs of the customers.</p>
+                <p class="txt-info">Healthcare providers can modify the app according to their requirements. Customisation can be done based on the location and the needs of the customers.</p>
               </div>
-              <div class="col-12 col-md-5 product-details-item">
+              <div class="col-12 col-md-7 product-details-item">
                 <img src="./assets/img/card-1-slide.png" class="img-fluid" alt="">
                 <h4 class="subtitle-2">Private User Registration</h4>
-                <p>Service users can register without entering their don’t need to enter identifying information, such as their name in order to use the eC-Card app, their privacy is maintained.</p>
+                <p class="txt-info">Service users can register without entering their don’t need to enter identifying information, such as their name in order to use the eC-Card app, their privacy is maintained.</p>
               </div>
             </div>
-            <div class="pt-3 pt-md-5 pb-3 mt-md-5">
+            <div class="pt-3 pt-md-5 pb-3 mt-md-5 pb-lg-5">
               <div class="d-md-none mb-3">
                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/WzbCEfpe20U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <button class="btn btn-secondary rounded-pill">Find Out More</button>
-              <button class="btn btn-outline-secondary rounded-pill d-none d-md-inline-block">Find Out More</button>
+              <button class="btn btn-secondary rounded-pill">Find Out More <i class="fa-solid fa-arrow-right-long ms-1"></i></button>
+              <button class="btn btn-outline-secondary ms-lg-5 rounded-pill d-none d-md-inline-block">Watch Video <i class="fa-solid fa-play ms-1"></i></button>
             </div>
           </div>
         </div>
       </div>
     </section>
+  </li>
+  <li>
     <section class="product product-2 spacing-y-2 spacing-y-md-0 snap-align-start bg-cyan-200 position-relative">
       <div class="bubble bubble-pme-1"></div>
       <div class="bubble bubble-pme-2"></div>
@@ -201,8 +215,8 @@
           <div class="col-12 col-md-auto d-flex product-design-line">
             <div class="product-count-wrapper text-primary">
               <div class="product-count">
-                <span class="title-1">2</span>
-                <span class="tiny-num">| 3</span>
+                <span class="title-1 big-txt second-font">2</span>
+                <span class="tiny-num second-font">| 3</span>
                 <div>PRODUCT</div>
               </div>
             </div>
@@ -213,38 +227,40 @@
               <div class="bubble bubble-p-card"></div>
               <lottie-player class="lp-card position-relative" src="assets/json/card-animation.json" background="transparent" speed="1" loop autoplay></lottie-player>
             </div>
-            <h3 class="subtitle-1 text-primary">eC-Card</h3>
-            <p class="lead">The accessible, secure and confidential condom card app offering free sexual health resources to young people.</p>
+            <h3 class="subtitle-1 text-primary pb-2">eC-Card</h3>
+            <p class="lead lead-left-info-txt">The accessible, secure and confidential condom card app offering free sexual health resources to young people.</p>
           </div>
-          <div class="col-12 col-md-7 align-self-center">
+          <div class="col-12 col-md-7 align-self-center product-right-wrapper">
             <div class="d-none d-md-flex flex-wrap flex-md-nowrap product-details-row">
-              <div class="col-12 col-md-5 product-details-item">
+              <div class="col-12 col-md-7 product-details-item">
                 <img src="./assets/img/card-1-slide.png" class="img-fluid" alt="">
                 <h4 class="subtitle-2">Collect Local Data</h4>
-                <p>Statistics on condom distribution can be collated by sexual health services to help control supply and compare with other data, such as teen pregnancies and STIs.</p>
+                <p class="txt-info">Statistics on condom distribution can be collated by sexual health services to help control supply and compare with other data, such as teen pregnancies and STIs.</p>
               </div>
-              <div class="col-12 col-md-5 product-details-item">
+              <div class="col-12 col-md-7 product-details-item">
                 <img src="./assets/img/card-1-slide.png" class="img-fluid" alt="">
                 <h4 class="subtitle-2">Highly Customisable App</h4>
-                <p>Healthcare providers can modify the app according to their requirements. Customisation can be done based on the location and the needs of the customers.</p>
+                <p class="txt-info">Healthcare providers can modify the app according to their requirements. Customisation can be done based on the location and the needs of the customers.</p>
               </div>
-              <div class="col-12 col-md-5 product-details-item">
+              <div class="col-12 col-md-7 product-details-item">
                 <img src="./assets/img/card-1-slide.png" class="img-fluid" alt="">
                 <h4 class="subtitle-2">Private User Registration</h4>
-                <p>Service users can register without entering their don’t need to enter identifying information, such as their name in order to use the eC-Card app, their privacy is maintained.</p>
+                <p class="txt-info">Service users can register without entering their don’t need to enter identifying information, such as their name in order to use the eC-Card app, their privacy is maintained.</p>
               </div>
             </div>
-            <div class="pt-4 pt-md-5 mt-md-5">
-              <div class="d-md-none">
+            <div class="pt-3 pt-md-5 pb-3 mt-md-5 pb-lg-5">
+              <div class="d-md-none mb-3">
                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/WzbCEfpe20U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <button class="btn btn-secondary rounded-pill">Find Out More</button>
-              <button class="btn btn-outline-secondary rounded-pill d-none d-md-inline-block">Find Out More</button>
+              <button class="btn btn-secondary rounded-pill">Find Out More <i class="fa-solid fa-arrow-right-long ms-1"></i></button>
+              <button class="btn btn-outline-secondary ms-lg-5 rounded-pill d-none d-md-inline-block">Watch Video <i class="fa-solid fa-play ms-1"></i></button>
             </div>
           </div>
         </div>
       </div>
     </section>
+  </li>
+  <li>
     <section class="product product-3 spacing-y-2 spacing-y-md-0 snap-align-start bg-pink-100 position-relative">
       <div class="bubble bubble-covid-1"></div>
       <div class="container-fluid spacing-start position-relative">
@@ -252,8 +268,8 @@
           <div class="col-12 col-md-auto d-flex product-design-line">
             <div class="product-count-wrapper text-primary">
               <div class="product-count">
-                <span class="title-1">3</span>
-                <span class="tiny-num">| 3</span>
+                <span class="title-1 big-txt second-font">3</span>
+                <span class="tiny-num second-font">| 3</span>
                 <div>PRODUCT</div>
               </div>
             </div>
@@ -264,53 +280,57 @@
               <div class="bubble bubble-p-card"></div>
               <lottie-player class="lp-card position-relative" src="assets/json/card-animation.json" background="transparent" speed="1" loop autoplay></lottie-player>
             </div>
-            <h3 class="subtitle-1 text-primary">eC-Card</h3>
-            <p class="lead">The accessible, secure and confidential condom card app offering free sexual health resources to young people.</p>
+            <h3 class="subtitle-1 text-primary pb-2">eC-Card</h3>
+            <p class="lead lead-left-info-txt">The accessible, secure and confidential condom card app offering free sexual health resources to young people.</p>
           </div>
-          <div class="col-12 col-md-7 align-self-center">
+          <div class="col-12 col-md-7 align-self-center product-right-wrapper">
             <div class="d-none d-md-flex flex-wrap flex-md-nowrap product-details-row">
-              <div class="col-12 col-md-5 product-details-item">
+              <div class="col-12 col-md-7 product-details-item">
                 <img src="./assets/img/card-1-slide.png" class="img-fluid" alt="">
                 <h4 class="subtitle-2">Collect Local Data</h4>
-                <p>Statistics on condom distribution can be collated by sexual health services to help control supply and compare with other data, such as teen pregnancies and STIs.</p>
+                <p class="txt-info">Statistics on condom distribution can be collated by sexual health services to help control supply and compare with other data, such as teen pregnancies and STIs.</p>
               </div>
-              <div class="col-12 col-md-5 product-details-item">
+              <div class="col-12 col-md-7 product-details-item">
                 <img src="./assets/img/card-1-slide.png" class="img-fluid" alt="">
                 <h4 class="subtitle-2">Highly Customisable App</h4>
-                <p>Healthcare providers can modify the app according to their requirements. Customisation can be done based on the location and the needs of the customers.</p>
+                <p class="txt-info">Healthcare providers can modify the app according to their requirements. Customisation can be done based on the location and the needs of the customers.</p>
               </div>
-              <div class="col-12 col-md-5 product-details-item">
+              <div class="col-12 col-md-7 product-details-item">
                 <img src="./assets/img/card-1-slide.png" class="img-fluid" alt="">
                 <h4 class="subtitle-2">Private User Registration</h4>
-                <p>Service users can register without entering their don’t need to enter identifying information, such as their name in order to use the eC-Card app, their privacy is maintained.</p>
+                <p class="txt-info">Service users can register without entering their don’t need to enter identifying information, such as their name in order to use the eC-Card app, their privacy is maintained.</p>
               </div>
             </div>
-            <div class="pt-4 pt-md-5 mt-md-5">
-              <div class="d-md-none">
+            <div class="pt-3 pt-md-5 pb-3 mt-md-5 pb-lg-5">
+              <div class="d-md-none mb-3">
                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/WzbCEfpe20U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <button class="btn btn-secondary rounded-pill">Find Out More</button>
-              <button class="btn btn-secondary rounded-pill d-none d-md-inline-block">Find Out More</button>
+              <button class="btn btn-secondary rounded-pill">Find Out More <i class="fa-solid fa-arrow-right-long ms-1"></i></button>
+              <button class="btn btn-outline-secondary ms-lg-5 rounded-pill d-none d-md-inline-block">Watch Video <i class="fa-solid fa-play ms-1"></i></button>
             </div>
           </div>
         </div>
       </div>
     </section>
+  </li>
+  </ul>
+
 
     <section class="testimonial-section">
-      <div class="container-fluid spacing-x">
+      <div class="container-fluid px-0">
         <div class="testimonial-slider">
           <div>
-            <div class="testimonial-slide bg-white">
-              <div class="row align-items-end">
-                <div class="col-5">
+            <div class="testimonial-slide ">
+              <div class="bg-white">
+              <div class="row align-items-end ">
+                <div class="col-5 col-lg-4 left-side-img">
                   <img src="./assets/img/pd-person.png" alt="Testimonial User" class="img-fluid">
                 </div>
-                <div class="col-7 px-5">
-                  <div class="testimonial-head mb-4 mb-lg-5">
+                <div class="col-7 col-lg-8 px-3">
+                  <div class="testimonial-head mb-3 mb-lg-4">
                     <img src="./assets/img/provide-digital-logo-footer.png" class="img-fluid footer-logo" alt="Provide Digital" />
                   </div>
-                  <div class="testimonial-content lead">
+                  <div class="testimonial-content lead col-lg-9">
                     <p>"Lorem ipsum dolor sit amet, consetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
                   </div>
                   <div class="testimonial-footer">
@@ -320,14 +340,62 @@
                 </div>
               </div>
             </div>
+            </div>
           </div>
+          <div>
+            <div class="testimonial-slide ">
+              <div class="bg-white">
+              <div class="row align-items-end ">
+                <div class="col-5 col-lg-4 left-side-img">
+                  <img src="./assets/img/pd-person.png" alt="Testimonial User" class="img-fluid">
+                </div>
+                <div class="col-7 col-lg-8 px-3">
+                  <div class="testimonial-head mb-3 mb-lg-4">
+                    <img src="./assets/img/provide-digital-logo-footer.png" class="img-fluid footer-logo" alt="Provide Digital" />
+                  </div>
+                  <div class="testimonial-content lead col-lg-9">
+                    <p>"Lorem ipsum dolor sit amet, consetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                  </div>
+                  <div class="testimonial-footer">
+                    <strong class="text-dark">Philip Richards</strong>
+                    <p style="font-weight: 300;">Director, Provide Digital</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div>
+            <div class="testimonial-slide ">
+              <div class="bg-white">
+              <div class="row align-items-end ">
+                <div class="col-5 col-lg-4 left-side-img">
+                  <img src="./assets/img/pd-person.png" alt="Testimonial User" class="img-fluid">
+                </div>
+                <div class="col-7 col-lg-8 px-3">
+                  <div class="testimonial-head mb-3 mb-lg-4">
+                    <img src="./assets/img/provide-digital-logo-footer.png" class="img-fluid footer-logo" alt="Provide Digital" />
+                  </div>
+                  <div class="testimonial-content lead col-lg-9">
+                    <p>"Lorem ipsum dolor sit amet, consetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                  </div>
+                  <div class="testimonial-footer">
+                    <strong class="text-dark">Philip Richards</strong>
+                    <p style="font-weight: 300;">Director, Provide Digital</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+         
         </div>
       </div>
 
-      <div class="sec-amazing-partners bg-cyan spacing-y-2">
+      <div class="sec-amazing-partners spacing-y-2">
         <div class="container-fluid spacing-x">
-          <h2 class="title-1">Our Amazing Partners</h2>
-          <p class="col-12 col-md-10 col-lg-8 lead  pt-4 pb-5">Great discoveries and improvements invariably involve the cooperation of many minds.</p>
+          <h2 class="title-1">Our Amazing <br/> Partners</h2>
+          <p class="col-12 col-md-10 col-lg-6 col-xl-5 lead  pt-4 pb-5">Great discoveries and improvements invariably involve the cooperation of many minds.</p>
 
           <div class="partners-slider px-n3">
             <div class="px-3"><img src="./assets/img/nhs-foundation-trust.png" alt="hs-foundation-trust" class="img-fluid mx-auto"></div>
@@ -339,7 +407,7 @@
       </div>
     </section>
 
-    <footer class="main-footer bg-cyan pt-5 snap-align-start text-center text-md-left">
+    <footer class="main-footer bg-cyan pt-5 snap-align-start text-md-left">
       <div class="container-fluid spacing-x pt-5">
         <div class="row">
           <div class="col-12 col-md-3">
@@ -399,9 +467,9 @@
             <h3 class="subtitle-2 d-none d-md-block">Subscribe</h3>
             <ul class="list-unstyled footer-menu">
               <li>
-                <div class="input-group">
+                <div class="input-group  subscribe-input">
                   <input type="text" class="form-control border-ft-color" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <button class="btn btn-outline-secondary bg-transparent custum-footer-btn" type="button" id="button-addon2">
+                  <button class="btn bg-transparent custum-footer-btn" type="button" id="button-addon2">
                     <i class="bi bi-send-fill"></i>
                   </button>
                 </div>
@@ -422,11 +490,12 @@
       </div>
     </footer>
   </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" crossorigin="anonymous"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" type="text/javascript" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" type="text/javascript" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 

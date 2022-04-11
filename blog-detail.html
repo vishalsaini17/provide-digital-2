@@ -13,6 +13,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://kit.fontawesome.com/4187d7a49b.js" crossorigin="anonymous"></script>
+
 
 
 </head>
@@ -59,9 +61,9 @@
   </nav>
   <div class="py-5 bg-green-200"></div>
 
-  <main class="snap-wrapper">
+  <main class="snap-wrapper blog-details-main-wrapper">
 
-    <div class="blod-details spacing-x pt-5">
+    <div class="blod-details spacing-x">
       <section class="breadcrumb-section">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -74,10 +76,18 @@
 
       <div class="row">
         <div class="col-12 col-md-9">
-          <article>
+          <article class="blog-main-details">
             <div class="artical-head">
-              <h1 class="title-1">What we know so far about COVID-19 transmission</h1>
-              <time>00:00 AM | 3 Comments</time>
+              <h1 class="title-1 col-lg-11 col-xl-8 mb-0">What we know so far about COVID-19 transmission</h1>
+              <time class="blog-time">00:00 AM | 3 Comments</time>
+              <div class="blog-writer-info d-flex flex-wrap align-items-center">
+                <div class="img-wrapper">
+                  <img src="./assets/img/blog-user.png" alt="blog user" class="img-fluid">
+                </div>
+                <div class="text-wrapper">
+                  by John Doe / February 17, 2022
+                </div>
+              </div>
             </div>
 
             <div class="artical-body">
@@ -96,32 +106,39 @@
                 <p>“I think the line should be … you must always honor the deceased’s wishes and try to act in a way that is honorable and full of dignity,” Ernst said. </p>
                 <p>Again, this is extremely different, since Dean could never have stated he didn’t want to appear in a film after his death because, uh, how would he have imagined that was even a possibility—but whatever. Finding Jack is still headed into production with an expected release on November 11, 2020, whether we like it or not.</p>
               </div>
+
+              <div class="btn-wrapper">
+            <button class="btn btn-secondary rounded-pill">Explore More <i class="fa-solid fa-arrow-down-long ms-1"></i></button>
+
+              </div>
             </div>
           </article>
         </div>
+
+
         <aside class="col-12 col-md-3">
-          <div class="aside-item mb-4">
+          <div class="aside-item search-input mb-4">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+              <input type="text" class="form-control">
+              <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
           </div>
           <div class="aside-item mb-4">
-            <div class="aside-bg-wrapper p-4">
+            <div class="aside-bg-wrapper p-4 mb-5">
               <div class="blog-user-info text-center mt-3">
                 <img src="./assets/img/blog-user.png" alt="blog user" class="img-fluid">
 
-                <h5>John Doe</h5>
+                <h5 class="user-name">John Doe</h5>
                 <p>Vehicula dolor amet consectetur adipiscing elit. Cras sollicitudin, tellus vitae condimem egestliberos dolor auctor tellus.</p>
 
-                <div class="d-flex justify-content-center">
-                  <a href="#" class="mx-1">
+                <div class="d-flex justify-content-center social-wrapper pt-2">
+                  <a href="#" class="px-1 px-lg-2">
                     <i class="bi bi-facebook"></i>
                   </a>
-                  <a href="#" class="mx-1">
+                  <a href="#" class="px-1 px-lg-2">
                     <i class="bi bi-twitter"></i>
                   </a>
-                  <a href="#" class="mx-1">
+                  <a href="#" class="px-1 px-lg-2">
                     <i class="bi bi-linkedin"></i>
                   </a>
                 </div>
@@ -129,62 +146,73 @@
             </div>
           </div>
 
-          <div class="aside-item mb-4">
-            <h3 class="subtitle-2">Latest Articles</h3>
+          <div class="aside-item mb-4 mb-lg-5">
+            <h3 class="subtitle-2 py-3">Latest Articles</h3>
 
             <ul class="list-unstyled article-list">
-              <li class="aside-bg-wrapper p-3 mb-4">
-                <a href="#" class="d-flex">
-                  <div>
+              <li class="mb-4">
+                <a href="#" class="d-flex flex-wrap aside-bg-wrapper">
+                  <div class="aside-img-wrapper">
                     <img src="./assets/img/blog-temp-1.png" alt="blog mini banner" class="img-fluid">
                   </div>
-                  <div>
+                  <div class="flex-1">
                     <p>Scipit lobortis nisl ut aliqui ex ea commodo consequat lorem ipsum script?</p>
-                    <time>November 29, 2019</time>
+                    <p class="time-details">November 29, 2019</p>
                   </div>
                 </a>
               </li>
-              <li class="aside-bg-wrapper p-3 mb-4">
-                <a href="#" class="d-flex">
-                  <div>
-                    <img src="./assets/img/blog-temp.png" alt="blog mini banner" class="img-fluid">
-                  </div>
-                  <div>
-                    <p>Scipit lobortis nisl ut aliqui ex ea commodo consequat lorem ipsum script?</p>
-                    <time>November 29, 2019</time>
-                  </div>
-                </a>
-              </li>
-              <li class="aside-bg-wrapper p-3 mb-4">
-                <a href="#" class="d-flex">
-                  <div>
+              <li class="mb-4">
+                <a href="#" class="d-flex flex-wrap aside-bg-wrapper">
+                  <div class="aside-img-wrapper">
                     <img src="./assets/img/blog-temp-1.png" alt="blog mini banner" class="img-fluid">
                   </div>
-                  <div>
+                  <div class="flex-1">
                     <p>Scipit lobortis nisl ut aliqui ex ea commodo consequat lorem ipsum script?</p>
-                    <time>November 29, 2019</time>
+                    <p class="time-details">November 29, 2019</p>
                   </div>
                 </a>
               </li>
-              <li class="aside-bg-wrapper p-3 mb-4">
-                <a href="#" class="d-flex">
-                  <div>
-                    <img src="./assets/img/blog-temp.png" alt="blog mini banner" class="img-fluid">
+              <li class="mb-4">
+                <a href="#" class="d-flex flex-wrap aside-bg-wrapper">
+                  <div class="aside-img-wrapper">
+                    <img src="./assets/img/blog-temp-1.png" alt="blog mini banner" class="img-fluid">
                   </div>
-                  <div>
+                  <div class="flex-1">
                     <p>Scipit lobortis nisl ut aliqui ex ea commodo consequat lorem ipsum script?</p>
-                    <time>November 29, 2019</time>
+                    <p class="time-details">November 29, 2019</p>
+                  </div>
+                </a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="d-flex flex-wrap aside-bg-wrapper">
+                  <div class="aside-img-wrapper">
+                    <img src="./assets/img/blog-temp-1.png" alt="blog mini banner" class="img-fluid">
+                  </div>
+                  <div class="flex-1">
+                    <p>Scipit lobortis nisl ut aliqui ex ea commodo consequat lorem ipsum script?</p>
+                    <p class="time-details">November 29, 2019</p>
+                  </div>
+                </a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="d-flex flex-wrap aside-bg-wrapper">
+                  <div class="aside-img-wrapper">
+                    <img src="./assets/img/blog-temp-1.png" alt="blog mini banner" class="img-fluid">
+                  </div>
+                  <div class="flex-1">
+                    <p>Scipit lobortis nisl ut aliqui ex ea commodo consequat lorem ipsum script?</p>
+                    <p class="time-details">November 29, 2019</p>
                   </div>
                 </a>
               </li>
             </ul>
           </div>
 
-          <div class="aside-item mb-4">
+          <div class="aside-item mb-4 mb-lg-5">
             <div class="aside-bg-wrapper p-4">
               <h4>Tags</h4>
 
-              <ul class="list-unstyled tag=list">
+              <ul class="list-unstyled tag-list pt-3">
                 <li><a href="/blog/medical">Medical</a></li>
                 <li><a href="/blog/hospital">Hospital</a></li>
                 <li><a href="/blog/covid">COVID</a></li>
@@ -199,26 +227,26 @@
             <div class="aside-bg-wrapper p-4">
               <h4>Categories</h4>
 
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
+              <ul class="list-group list-group-flush category-list pt-3">
+                <li class="d-flex justify-content-between align-items-center">
                   Medical
-                  <span class="badge bg-primary rounded-pill">14</span>
+                  <span class="category-count">14</span>
                 </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
+                <li class="d-flex justify-content-between align-items-center">
                   Medicine
-                  <span class="badge bg-primary rounded-pill">2</span>
+                  <span class="category-count">2</span>
                 </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
+                <li class="d-flex justify-content-between align-items-center">
                   Healthcare
-                  <span class="badge bg-primary rounded-pill">1</span>
+                  <span class="category-count">1</span>
                 </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
+                <li class="d-flex justify-content-between align-items-center">
                   eC-Card
-                  <span class="badge bg-primary rounded-pill">1</span>
+                  <span class="category-count">1</span>
                 </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
+                <li class="d-flex justify-content-between align-items-center">
                   COVID-19
-                  <span class="badge bg-primary rounded-pill">1</span>
+                  <span class="category-count">1</span>
                 </li>
               </ul>
             </div>
