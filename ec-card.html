@@ -13,6 +13,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://kit.fontawesome.com/4187d7a49b.js" crossorigin="anonymous"></script>
+
 
 
 </head>
@@ -86,7 +88,7 @@
       </div>
     </section>
 
-    <section class="app-section spacing-y-md-1">
+    <section class="app-section min-h-100vh spacing-y-md-1">
       <div class="container-fluid spacing-x position-relative pt-5">
         <div class="row">
           <div class="col-md-6 col-12 text-center img-section">
@@ -95,7 +97,7 @@
 
           <div class="col-md-6 col-12">
             <h2 class="title text-cyan">The App</h2>
-            <div class="counting my-5">
+            <div class="counting my-5 d-flex flex-wrap">
               <span class="circle active">1</span>
               
               <span class="circle">2</span>
@@ -106,18 +108,17 @@
             </div>
             <h3 class="subtitle">Easy</h3>
             <p class="mt-5">The eC-Card is a unique app for young people aged 16 to 24. It enables them to access condoms and sexual health services for free from sexual health service providers closest to them.</p>
-            <button class="btn btn-secondary rounded-pill mt-5">Schedule a Demo <i class="bi bi-arrow-right"></i></button>
           </div>
 
         </div>
       </div>
     </section>
 
-    <section class="business-section spacing-y-md-1">
-      <div class="container-fluid spacing-x position-relative pt-5">
+    <section class="business-section min-h-100vh  d-flex flex-wrap align-items-center py-3 spacing-y-md-1">
+      <div class="container-fluid spacing-x position-relative">
         <div class="row">
           
-          <div class="col-12 pt-5">
+          <div class="col-12">
             <h3 class="title">Useful for <br> Business</h3>
             <div class="cards row">
               <div class="col">
@@ -130,7 +131,7 @@
                   <span></span>
                 </div>
                 <h4 class="lead mt-3 text-blue">Collect Local Data</h4>
-                <p>Sexual health services can compile statistics on condom distribution to help control supply and compare it to other data, such as teen pregnancies and STI outbreaks.</p>
+                <p class="info-txt">Sexual health services can compile statistics on condom distribution to help control supply and compare it to other data, such as teen pregnancies and STI outbreaks.</p>
               </div>
               
               <div class="col">
@@ -143,7 +144,7 @@
                   <span></span>
                 </div>
                 <h4 class="lead mt-3 text-blue">Highly Customisable</h4>
-                <p>The app can be modified to suit the requirements of a health provider depending on the local area they cater to, with accurate geolocation technology. The eC-Card app has extensive customisation options.</p>
+                <p class="info-txt">The app can be modified to suit the requirements of a health provider depending on the local area they cater to, with accurate geolocation technology. The eC-Card app has extensive customisation options.</p>
               </div>
               
               <div class="col">
@@ -156,7 +157,7 @@
                   <span class="active"></span>
                 </div>
                 <h4 class="lead mt-3 text-blue">Private User Registration</h4>
-                <p>The users can register without using their identifying information such as their names, they can maintain anonymity and their privacy while looking for resources.</p>
+                <p class="info-txt">The users can register without using their identifying information such as their names, they can maintain anonymity and their privacy while looking for resources.</p>
               </div>
               
             </div>
@@ -168,65 +169,85 @@
       </div>
     </section>
 
-    <section class="contact-section spacing-y-md-1">
+
+    <section class="get-in-touch-section min-h-100vh d-flex flex-wrap align-items-center py-3 book-demo-wrapper bg-green-200">
       <div class="container-fluid spacing-x">
-        <div class="row">
+        <div class="">
+          <div class="row justify-content-between">
+            <div class="col-12 col-xl-3 col-lg-6">
+              <h2 class="title-1">Book a Demo Now!</h2>
+              <p class="contact-txt">Enter you details and get an appointment scheduled for a demo, right away.</p>
 
-          <div class="col-4 mt-5">
-            <h1 class="title">Book a <br> Demo Now!</h1>
-            <p class="lead mt-5 w-75">Enter you details and get an appointment scheduled for a demo, right away.</p>
+              
+
+            </div>
+
+            <div class="col-12 col-xl-7 col-lg-6">
+              <div class="white-wrapper h-100">
+                <div class="row justify-content-between align-self-start form-own">
+                  <div class="col-12 pb-3">
+                    <h4>Please enter you details</h4>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="first-name">First Name*</label>
+                      <input type="text" class="form-control mt-2" id="first-name">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="last-name">Last Name*</label>
+                      <input type="text" class="form-control error mt-2" id="last-name">
+                      <div class="error-wrapper text-center">Enter a valid phone number</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="official-email">Work Email*</label>
+                      <input type="text" class="form-control mt-2" id="official-email">
+                    </div>
+                  </div>
+                 
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="phone-number">Phone Number*</label>
+                      <input type="text" class="form-control mt-2" id="phone-number">
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="phone-number">Company*</label>
+                      <input type="text" class="form-control mt-2" id="phone-number">
+                    </div>
+                  </div>
+                 
+                  <div class="col-12 col-md-6">
+                    <button class="btn submit-btn btn-secondary rounded-pill w-100">Schedule a Demo <i class="fa-solid fa-arrow-right-long ms-1"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <form action="" class="col-6 mx-auto contact-form row bg-white">
-            <h1 class="lead text-blue fw-bold mb-5">Please enter your detials</h1>
-            <div class="col-md-6 mb-5">
-              <label for="first_name" class="form-label small">First Name*</label>
-              <input type="text" name="first_name" id="first_name" class="form-control">
-            </div>
-
-            <div class="col-md-6 mb-5">
-              <label for="last_name" class="form-label small">Last Name*</label>
-              <input type="text" name="last_name" id="last_name" class="form-control">
-            </div>
-
-            <div class="col-md-6 mb-5">
-              <label for="work_email" class="form-label small">Work Email*</label>
-              <input type="email" name="work_email" id="work_email" class="form-control">
-            </div>
-            
-            <div class="col-md-6 mb-5">
-              <label for="phone" class="form-label small">Phone Number*</label>
-              <input type="tel" name="phone" id="phone" class="form-control">
-            </div>
-
-            <div class="col-md-6 mb-5">
-              <label for="company" class="form-label small">Company*</label>
-              <input type="text" name="company" id="company" class="form-control">
-            </div>
-
-            <div class="col-md-6 mb-5 text-center">
-              <button class="btn btn-secondary rounded-pill">Schedule a Demo <i class="bi bi-arrow-right"></i></button>
-            </div>
-
-          </form>
         </div>
+
       </div>
     </section>
 
-    <section class="why-section spacing-y-md-1">
+    <section class="why-section pt-xl-5 py-4">
       <div class="container-fluid spacing-x">
         <div class="row">
           <div class="col-md-6">
             <h1 class="title">Why this app?</h1>
             <p class="lead mt-5">The eC-Card is a first of its kind smartphone app that enables sexual health service providers to offer free condoms to young people, making access to sexual health resources easier than ever before. </p>
-            <button class="btn btn-secondary rounded-pill mt-5">Learn More</button>
+            <button class="btn btn-secondary rounded-pill mt-5">Learn More <i class="fa-solid fa-arrow-right-long ms-1"></i></button>
           </div>
           <div class="col-md-6 text-center">
             <img src="./assets/img/whythisapp.png" alt="why this img" class="img-fluid">
           </div>
         </div>
 
-        <div class="row spacing-y-1">
+        <div class="row pt-lg-4 py-3 pt-xl-5 accordion-own">
           <div class="col-md-3">
             <h1 class="subtitle">For the courious.</h1>
           </div>
@@ -236,6 +257,9 @@
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, aut #1
+                    <i class="fa-thin plus fa-plus ms-1"></i>
+                    <i class="minus ms-1">-</i> 
+
                   </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
@@ -248,6 +272,8 @@
                 <h2 class="accordion-header" id="headingTwo">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, doloremque! #2
+                    <i class="fa-thin plus fa-plus ms-1"></i>
+                    <i class="minus ms-1">-</i> 
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
@@ -260,6 +286,8 @@
                 <h2 class="accordion-header" id="headingThree">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laudantium #3
+                    <i class="fa-thin plus fa-plus ms-1"></i>
+                    <i class="minus ms-1">-</i> 
                   </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
