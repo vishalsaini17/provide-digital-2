@@ -320,10 +320,11 @@ section {
   width: 100%;
   left: 0;
   top: 0;
+  pointer-events: none;
 }
 
 .green-bubble .bubble{
-  background-color: #E3F5EF;
+  background-color: rgba(40, 148, 112, 0.07);
 }
 
 .bubble {
@@ -1169,9 +1170,50 @@ padding: 20px 10px;
   padding-top: 20px;
 }
 /* provide my experience */
-.product-features-list :nth-child(even) {
+.product-features-list li:nth-child(even) {
   flex-direction: row-reverse;
 }
+
+.product-features-list li:not(:last-child){
+  padding-bottom: 10%;
+}
+
+.product-features-list li:nth-child(even) .product-features-img {
+ padding-left: 50px;
+}
+.product-features-list li:nth-child(odd) .product-features-img {
+  padding-right: 50px;
+ }
+
+ .product-features-content p{
+   color: #717171;
+   line-height: 1.9;
+ }
+
+ .provide-my-exp-wrapper .product-features-section .bubble-banner-sm-1{
+  top: auto;
+  bottom: 0;
+ }
+ .provide-my-exp-wrapper .product-features-section .title{
+   display: inline-block;
+ }
+ .provide-my-exp-wrapper .product-features-section .title .bubble-wrapper{
+  overflow: initial;
+ }
+ .provide-my-exp-wrapper .product-features-section .title .bubble-banner-md-2{
+  right: -24%;
+  bottom: 24%;
+  height: 110px;
+  width: 110px;
+ }
+
+ .provide-my-exp-wrapper .main-banner .bubble-banner-lg-2{
+   top: auto;
+   left: auto;
+   bottom: 5%;
+   right: 10%;
+ }
+
 
 /* our process */
 .our-process .nav-link {
@@ -1244,6 +1286,24 @@ padding: 1px;
 
 
 /* ------------------------------ EC-Card Page ------------------------------ */
+#ec-card .app-section.second img:nth-child(2),
+#ec-card .app-section.third img:nth-child(3),
+#ec-card .app-section.fourth img:nth-child(4),
+#ec-card .app-section img:first-child{
+  display: inline-block;
+}
+
+#ec-card .app-section .counting-list li.active{
+  display: block;
+}
+
+#ec-card .app-section img,
+#ec-card .app-section.second img:first-child,
+#ec-card .app-section.third img:first-child,
+#ec-card .app-section.fourth img:first-child,
+#ec-card .app-section .counting-list li{
+  display: none;
+}
 #ec-card.snap-wrapper .main-banner {
   min-height: 100vh;
   padding-bottom: 20px;
@@ -1267,6 +1327,26 @@ font-size: 20px;
   background: #fffef6;
 }
 
+
+#ec-card.snap-wrapper .app-section.second{
+  background: #ecf5fe;
+
+}
+#ec-card.snap-wrapper .app-section.second .counting .circle{
+  background-color:#d6e5f6 ;
+}
+/* #d6f3e4 */
+#ec-card.snap-wrapper .app-section.third{
+  background: #ebfdf4;
+
+}
+#ec-card.snap-wrapper .app-section.third .counting .circle{
+  background-color:#d6f3e4 ;
+}
+#ec-card.snap-wrapper .app-section.fourth{
+  background: #fffef6;
+
+}
 #ec-card.snap-wrapper .app-section .img-section img{
 max-width: 15vw;
 }
@@ -1606,6 +1686,16 @@ max-width: 15vw;
   color: #717171;
 }
 
+.provide-my-exp-wrapper .main-banner .main-heading{
+  color: var(--bs-cyan);
+}
+
+.align-center-100vh{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 
 
@@ -1647,6 +1737,8 @@ max-width: 15vw;
 }
 
 @media (min-width: 992px) {
+
+
   :root {
     --logo-width: 196px;
     --main-heading-font: 60px;
@@ -1658,6 +1750,14 @@ max-width: 15vw;
     --lead-font: 18px;
     --footer-menu-font: 18px;
     --footer-logo-width: 242px;
+  }
+
+  .mw-md{
+    max-width: 400px;
+  }
+
+  .mw-sm{
+    max-width: 300px;
   }
 
   .spacing-y-lg-0 {

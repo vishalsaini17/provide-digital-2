@@ -80,5 +80,41 @@ $(document).ready(function () {
     $(this).parents('.read-more-wrapper').removeClass('active')
   })
 
+  $('.our-team-list-wrapper .read-more-btn').click(function () {
+    $('body').addClass('modal-open');
+    $(this).parents('.list-item').find('.read-more-wrapper').addClass('active')
+  })
+
+  $('#ec-card .counting span').click(function () {
+    $('#ec-card .counting span').removeClass('active');
+
+    $(this).addClass('active');
+
+    $(this).parents('.app-section').removeClass('second')
+    $(this).parents('.app-section').removeClass('third')
+    $(this).parents('.app-section').removeClass('fourth');
+
+    $(this).parents('.app-section').find('.counting-list li').removeClass('active')
+    if ($(this).html() == 2) {
+
+      $(this).parents('.app-section').addClass('second')
+    }
+    if ($(this).html() == 3) {
+      $(this).parents('.app-section').addClass('third')
+    }
+    if ($(this).html() == 4) {
+      $(this).parents('.app-section').addClass('fourth')
+    }
+    $(this).parents('.app-section').find(`.counting-list li:nth-child(${$(this).html()})`).addClass('active')
+    // console.log('aaa', a)
+    // $(this).parents('.read-more-wrapper').removeClass('active')
+  })
+
+  if ($('#ec-card .app-section .counting-list li').length > 0) {
+    $('#ec-card .app-section .counting-list li:first-child').addClass('active');
+  }
+
+
+
 })
 
